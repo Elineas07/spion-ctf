@@ -1,17 +1,1 @@
-function sjekkTilgang() {
-    if (sessionStorage.getItem("side3") !== "true") {
-        window.location.href = "index2.html"; // Send tilbake til innlogging
-    }
-}
-
-function sjekkPassordForSide3() {
-    const passord = "bilde"; // Passord til Side 2
-    const brukerPassord = document.getElementById("passord").value;
-
-    if (brukerPassord === passord) {
-        sessionStorage.setItem("side4", "true"); // Gi tilgang til Side 2
-        window.location.href = "index4.html"; // Gå til Side 2
-    } else {
-        alert("Feil passord!");
-    }
-}
+function _0x45ce(_0x369283,_0x1188d5){const _0x2f2fc2=_0x2f2f();return _0x45ce=function(_0x45cec2,_0x2f3b92){_0x45cec2=_0x45cec2-0x153;let _0x596270=_0x2f2fc2[_0x45cec2];return _0x596270;},_0x45ce(_0x369283,_0x1188d5);}function _0x2f2f(){const _0xa5a862=['location','10914834lBklGV','1315077JeZNpV','280qcIKwn','passord','true','22455820rQFXdN','1279888cAEABa','3CBwsHr','getElementById','getItem','index4.html','283869kpmlmr','2544OZFzwL','href','2885vWkNSr','setItem','1042126eDJIao','index2.html','bilde'];_0x2f2f=function(){return _0xa5a862;};return _0x2f2f();}(function(_0x7e3dab,_0x3dfb3b){const _0x2f85e8=_0x45ce,_0xe29291=_0x7e3dab();while(!![]){try{const _0x54304f=parseInt(_0x2f85e8(0x166))/0x1+-parseInt(_0x2f85e8(0x161))/0x2*(-parseInt(_0x2f85e8(0x158))/0x3)+-parseInt(_0x2f85e8(0x157))/0x4+parseInt(_0x2f85e8(0x15f))/0x5*(-parseInt(_0x2f85e8(0x15d))/0x6)+-parseInt(_0x2f85e8(0x165))/0x7+parseInt(_0x2f85e8(0x153))/0x8*(-parseInt(_0x2f85e8(0x15c))/0x9)+parseInt(_0x2f85e8(0x156))/0xa;if(_0x54304f===_0x3dfb3b)break;else _0xe29291['push'](_0xe29291['shift']());}catch(_0x12b88b){_0xe29291['push'](_0xe29291['shift']());}}}(_0x2f2f,0xd0791));function sjekkTilgang(){const _0x58c562=_0x45ce;sessionStorage[_0x58c562(0x15a)]('side3')!==_0x58c562(0x155)&&(window[_0x58c562(0x164)][_0x58c562(0x15e)]=_0x58c562(0x162));}function sjekkPassordForSide3(){const _0x184ec3=_0x45ce,_0x46e349=_0x184ec3(0x163),_0x1c16c8=document[_0x184ec3(0x159)](_0x184ec3(0x154))['value'];_0x1c16c8===_0x46e349?(sessionStorage[_0x184ec3(0x160)]('side4',_0x184ec3(0x155)),window['location'][_0x184ec3(0x15e)]=_0x184ec3(0x15b)):alert('Feil\x20passord!');}

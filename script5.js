@@ -1,17 +1,1 @@
-function sjekkTilgang() {
-    if (sessionStorage.getItem("side5") !== "true") {
-        window.location.href = "index2.html"; // Send tilbake til innlogging
-    }
-}
-
-function sjekkPassordForSide3() {
-    const passord = "bilde"; // Passord til Side 2
-    const brukerPassord = document.getElementById("passord").value;
-
-    if (brukerPassord === passord) {
-        sessionStorage.setItem("side5", "true"); // Gi tilgang til Side 2
-        window.location.href = "index6.html"; // Gå til Side 2
-    } else {
-        alert("Feil passord!");
-    }
-}
+(function(_0x55817,_0xc82a16){const _0x14ddec=_0x265e,_0x15d178=_0x55817();while(!![]){try{const _0x96272b=parseInt(_0x14ddec(0x95))/0x1+parseInt(_0x14ddec(0x9d))/0x2+parseInt(_0x14ddec(0x9f))/0x3*(parseInt(_0x14ddec(0xa7))/0x4)+-parseInt(_0x14ddec(0xa5))/0x5+parseInt(_0x14ddec(0x97))/0x6*(-parseInt(_0x14ddec(0xa1))/0x7)+-parseInt(_0x14ddec(0xa4))/0x8*(parseInt(_0x14ddec(0xa2))/0x9)+-parseInt(_0x14ddec(0x9b))/0xa;if(_0x96272b===_0xc82a16)break;else _0x15d178['push'](_0x15d178['shift']());}catch(_0x24cc45){_0x15d178['push'](_0x15d178['shift']());}}}(_0x5cc3,0xd3de8));function sjekkTilgang(){const _0x33f7c5=_0x265e;sessionStorage[_0x33f7c5(0x9a)](_0x33f7c5(0x98))!==_0x33f7c5(0x9e)&&(window[_0x33f7c5(0x99)][_0x33f7c5(0x9c)]=_0x33f7c5(0x96));}function sjekkPassordForSide3(){const _0x37a477=_0x265e,_0x1b7ff3=_0x37a477(0xa3),_0x2c0dc8=document['getElementById'](_0x37a477(0xa6))['value'];_0x2c0dc8===_0x1b7ff3?(sessionStorage['setItem'](_0x37a477(0x98),_0x37a477(0x9e)),window[_0x37a477(0x99)][_0x37a477(0x9c)]='index6.html'):alert(_0x37a477(0xa0));}function _0x265e(_0x475d04,_0x23dadd){const _0x5cc316=_0x5cc3();return _0x265e=function(_0x265e5e,_0x3475bc){_0x265e5e=_0x265e5e-0x95;let _0x3a2249=_0x5cc316[_0x265e5e];return _0x3a2249;},_0x265e(_0x475d04,_0x23dadd);}function _0x5cc3(){const _0x50b081=['side5','location','getItem','5891950eLlqTh','href','3135434cZClzP','true','3PxckLD','Feil\x20passord!','98otFXei','4445667QaJsSQ','bilde','8tuAher','5363770xtrdoY','passord','1158116HSNoxg','1612648GgaBNX','index2.html','191214kLBRwd'];_0x5cc3=function(){return _0x50b081;};return _0x5cc3();}

@@ -1,17 +1,1 @@
-function sjekkTilgang() {
-    if (sessionStorage.getItem("side4") !== "true") {
-        window.location.href = "index3.html"; // Send tilbake til innlogging
-    }
-}
-
-function sjekkPassordForSide4() {
-    const passord = "safe"; // Passord til Side 2
-    const brukerPassord = document.getElementById("passord").value;
-
-    if (brukerPassord === passord) {
-        sessionStorage.setItem("side5", "true"); // Gi tilgang til Side 2
-        window.location.href = "index5.html"; // Gå til Side 2
-    } else {
-        alert("Feil passord!");
-    }
-}
+function _0x1d57(_0x2837b7,_0x1acb64){const _0x47dcc8=_0x47dc();return _0x1d57=function(_0x1d5717,_0x5a0ea6){_0x1d5717=_0x1d5717-0x170;let _0xd8fce8=_0x47dcc8[_0x1d5717];return _0xd8fce8;},_0x1d57(_0x2837b7,_0x1acb64);}(function(_0x40b5ba,_0x358d19){const _0x1b136e=_0x1d57,_0x54e18c=_0x40b5ba();while(!![]){try{const _0x2b2c2b=parseInt(_0x1b136e(0x17b))/0x1*(-parseInt(_0x1b136e(0x17c))/0x2)+-parseInt(_0x1b136e(0x17e))/0x3*(-parseInt(_0x1b136e(0x179))/0x4)+-parseInt(_0x1b136e(0x172))/0x5*(parseInt(_0x1b136e(0x182))/0x6)+parseInt(_0x1b136e(0x180))/0x7+parseInt(_0x1b136e(0x175))/0x8*(-parseInt(_0x1b136e(0x181))/0x9)+-parseInt(_0x1b136e(0x17a))/0xa*(-parseInt(_0x1b136e(0x177))/0xb)+parseInt(_0x1b136e(0x170))/0xc;if(_0x2b2c2b===_0x358d19)break;else _0x54e18c['push'](_0x54e18c['shift']());}catch(_0x5369eb){_0x54e18c['push'](_0x54e18c['shift']());}}}(_0x47dc,0x9ce5a));function sjekkTilgang(){const _0x127240=_0x1d57;sessionStorage['getItem'](_0x127240(0x17f))!==_0x127240(0x174)&&(window['location'][_0x127240(0x184)]='index3.html');}function _0x47dc(){const _0xe4bd22=['location','277437SePkyS','side4','4972870hkcRNm','6769305CGqyoo','2324418DSfONZ','setItem','href','7678728OwPNei','side5','10YUtBqh','passord','true','8LyCkuq','safe','11047487OwnQoB','Feil\x20passord!','4vZHjgR','10FjjjDC','277499dPdGZi','2iiBamT'];_0x47dc=function(){return _0xe4bd22;};return _0x47dc();}function sjekkPassordForSide4(){const _0x5ed6a2=_0x1d57,_0x2bf7bb=_0x5ed6a2(0x176),_0x4df298=document['getElementById'](_0x5ed6a2(0x173))['value'];_0x4df298===_0x2bf7bb?(sessionStorage[_0x5ed6a2(0x183)](_0x5ed6a2(0x171),_0x5ed6a2(0x174)),window[_0x5ed6a2(0x17d)][_0x5ed6a2(0x184)]='index5.html'):alert(_0x5ed6a2(0x178));}
