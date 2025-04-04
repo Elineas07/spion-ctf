@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style3.css">
 </head>
-<body>
+<body onload="sjekkTilgang()">
     <div>
         <h1>Oppgave 3</h1>
         <br>
@@ -21,7 +21,8 @@
         <br>
         <br>
         <br>
-        <button onclick="checkAnswer()">Neste oppgave</button>
+        <input type="password" id="passord" placeholder="Passord for Side 3">
+        <button onclick="sjekkPassordForSide3()">Gå til Side 3</button>
     </div>
     <script src="script3.js"></script>
 </body>

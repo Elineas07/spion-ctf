@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style2.css">
     <title>Side 2</title>
 </head>
-<body>
+<body onload="sjekkTilgang()">
     <div>
         <div>
             <h1>Oppgave 2</h1>
@@ -18,7 +18,8 @@
             <br>
             <br>
         </div>
-        <button onclick="checkAnswer()">Neste oppgave</button>
+        <input type="password" id="passord" placeholder="Passord for Side 2">
+        <button onclick="sjekkPassordForSide2()">Gå til Side 2</button>
     </div>
     <script src="script2.js"></script>
 </body>
