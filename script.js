@@ -1,3 +1,4 @@
+console.log("4759")
 function sjekkPassord() {
     const passord = "4759"; // Passord til Side 1
     const brukerPassord = document.getElementById("passord").value;
