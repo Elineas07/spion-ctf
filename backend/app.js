@@ -19,10 +19,10 @@ app.get('/svar1', (req, res) => {
     res.send({svar: 'detteerpassordet'})
   })
   app.get('/svar3', (req, res) => {
-    res.send('bilde')
+    res.send({svar: 'bilde'})
   })
   app.get('/svar4', (req, res) => {
-    res.send('safe')
+    res.send({svar: 'safe'})
   })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
