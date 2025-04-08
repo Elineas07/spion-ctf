@@ -1,2 +1,26 @@
-function _0x27cc(_0x4ffc9b,_0x26a72f){const _0x2a682c=_0x2a68();return _0x27cc=function(_0x27ccc4,_0x5a64f3){_0x27ccc4=_0x27ccc4-0x188;let _0x236289=_0x2a682c[_0x27ccc4];return _0x236289;},_0x27cc(_0x4ffc9b,_0x26a72f);}function _0x2a68(){const _0x51ab47=['location','440839iImGQb','3013492iisfJu','Feil\x20passord!','534244bvhKYQ','index2.html','24rewEuR','1978758rTdykJ','false','true','3dSFrJM','passord','log','2047604BXlwRa','1472185uBJXFO','3169158SXVcDJ','20aawHnw','4759','href'];_0x2a68=function(){return _0x51ab47;};return _0x2a68();}const _0x1ca500=_0x27cc;(function(_0x1a4fe5,_0xc5e1f1){const _0x480cf0=_0x27cc,_0x512e84=_0x1a4fe5();while(!![]){try{const _0x570ac0=parseInt(_0x480cf0(0x18d))/0x1+parseInt(_0x480cf0(0x196))/0x2+-parseInt(_0x480cf0(0x193))/0x3*(parseInt(_0x480cf0(0x18b))/0x4)+-parseInt(_0x480cf0(0x197))/0x5+-parseInt(_0x480cf0(0x198))/0x6+parseInt(_0x480cf0(0x18a))/0x7*(parseInt(_0x480cf0(0x18f))/0x8)+-parseInt(_0x480cf0(0x190))/0x9*(-parseInt(_0x480cf0(0x199))/0xa);if(_0x570ac0===_0xc5e1f1)break;else _0x512e84['push'](_0x512e84['shift']());}catch(_0x4cafd4){_0x512e84['push'](_0x512e84['shift']());}}}(_0x2a68,0x9518a),console[_0x1ca500(0x195)](_0x1ca500(0x19a)));function sjekkPassord(){const _0x552de6=_0x1ca500,_0x577d2e=_0x552de6(0x19a),_0x480435=document['getElementById'](_0x552de6(0x194))['value'];sessionStorage['setItem']('index2',_0x552de6(0x191)),_0x480435===_0x577d2e?(sessionStorage['setItem']('index2',_0x552de6(0x192)),window[_0x552de6(0x189)][_0x552de6(0x188)]=_0x552de6(0x18e)):alert(_0x552de6(0x18c));}
+const API_URL = "http://localhost:3000/svar1";
 
+async function hentSvar() {
+    const res = await fetch(API_URL)
+    const svar = await res.json()
+    return svar
+}
+console.log("4759")
+
+function sjekkPassord() {
+    hentSvar().then((fraServer) => {
+        const brukerPassord = document.getElementById("passord").value;
+
+        sessionStorage.setItem("index2", "false");
+    
+        if (brukerPassord === fraServer.svar) {
+            sessionStorage.setItem("index2", "true"); // Husk at brukeren har tilgang
+            window.location.href = "index2.html"; // Send videre
+        } else {
+            alert("Feil passord!");
+        }
+
+    })
+
+   
+}
