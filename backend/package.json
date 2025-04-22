@@ -1,6 +1,16 @@
 {
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "start": "node app.js",
+    "build": "node app.js build --output public"
+    
+
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0"
   }
+  
 }
+
